@@ -1,0 +1,216 @@
+body {
+   font-family: "Source Sans 3", sans-serif;
+   background-color: #ffffff;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header {
+    background-color: #ff5f8f;
+    text-align: center;
+    padding: 50px 0;
+    margin: 80px auto 0px auto;
+    border-radius: 10px;
+    height: 60vh;
+    align-content: center;
+}
+
+.header i {
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* About Section */
+.about-us {
+    background-color: #57c4d4;
+    text-align: center;
+    padding: 50px 60px;
+    margin: 80px auto 0px auto;
+    border-radius: 10px;
+    height: 60vh;
+    align-content: center;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+}
+.about-icon {
+    flex-basis: 45%;
+    
+}
+.about-icon h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.about-content {
+    flex-basis: 45%;
+    text-align: left;
+}
+.about-content p {
+    margin-bottom: 10px;
+    font-size: 15px;
+  line-height: 1.8;
+}
+.about-content a {
+    color:#86fb76;
+    text-decoration: none;
+}
+/* Gallery Section */
+.gallery {
+    padding: 50px 0;
+}
+
+.filter-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.filter {
+    color: #57c4d4;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+.filter.active {
+    font-weight: 400;
+    color: #ff5f8f;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+}
+#image2 {
+    height: 213px;
+}
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #57d4c2;
+    padding: 50px 55px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex-basis: 38%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid #cac2c2;
+    margin-right: 5px;
+    padding: 0px;
+    background-color: #57d4c2;
+}
+
+.contact-form button {
+    background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  float: right;
+}
+.contact-para {
+    margin-bottom: 10px;
+}
+.contact-para1 {
+    margin-bottom: 88px;
+}
+.contact-info {
+    flex-basis: 32%;
+    padding: 0px 0px 0px 40px;
+}
+.contact-map {
+    flex-basis: 30%;
+    text-align: center;
+     margin: 55px auto;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    color: #9b9b9b;
+}
+
+/* Responsive Design */
+@media (min-width:375px) and (max-width:768px) {
+    .header, .about-us, .contact {
+        padding: 30px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image, .about-content {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    }
+    #image2 {
+        height: 180px;
+    }
+    .contact-form {
+        order: 3;
+    }
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-info {
+        order: 2;
+    }
+    .social-links {
+        text-align: center;
+    }
+    .contact-map {
+        order: 1;
+        text-align: center;
+    }
+    .contact-form, .contact-info {
+        flex-basis: 100%;
+        padding: 0;
+        padding-bottom: 40px;
+        text-align: left;
+    }
+}
