@@ -107,7 +107,7 @@ body {
 
 /* Contact Section */
 .contact {
-    background-color: #57d4c2;
+    background-color: #9cc;;
     padding: 50px 55px;
     color: white;
     display: flex;
@@ -128,7 +128,7 @@ body {
     border-bottom: 2px solid #cac2c2;
     margin-right: 5px;
     padding: 0px;
-    background-color: #57d4c2;
+    background-color: #9cc;;
 }
 
 .contact-form button {
